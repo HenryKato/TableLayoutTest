@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableId"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <TableRow android:padding="3dip">
+        <EditText
+            android:id="@+id/android_version"
+            android:layout_height="wrap_content"
+            android:text="Enter Android Version"
+            android:layout_span="2"
+            android:textSize="18sp" />
+    </TableRow>
+    <TableRow android:padding="5dip">
+        <EditText
+            android:id="@+id/android_code"
+            android:layout_height="wrap_content"
+            android:text="Enter Android Code Name"
+            android:layout_span="2"
+            android:textSize="18sp" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/add_button"
+            android:text="Add"
+            android:onClick="addTableRow"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="20sp"
+            android:paddingRight="120dp"
+            android:text="Version"/>
+        <TextView
+            android:text="Code Name"
+            android:layout_width="match_parent"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/and_9"
+            android:text="Android 9.0"/>
+        <TextView
+            android:text="Pie"
+            android:id="@+id/pie"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textSize="20sp"
+            android:text="Android 8.0"/>
+        <TextView
+            android:text="Oreo"
+            android:textSize="20sp"/>
+    </TableRow>
+</TableLayout>
